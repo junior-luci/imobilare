@@ -1,0 +1,125 @@
+.about-header{
+    height: 20vh;
+}
+
+
+.about-img {
+    height: 40vh;
+    z-index: -1;
+    background-image: url('images/about.jpg');
+    background-size: cover;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.about-body {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+
+.about-column {
+    width: 50%;
+    display: flex;
+    color: #f0e68c;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.about-container {
+    background-image: url('images/borders.png');
+    background-size: cover;
+    align-items: center;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    display: flex;
+}
+
+.decorated-containers {
+    min-height: 100vh;
+}
+
+#ac-right, #ac-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text {
+    position: absolute;
+    padding: 100px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.space-about{
+    display: none;
+}
+
+@media screen and (max-width:1255px){
+    .about-body{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .space-about{
+        display: flex;
+        min-height: 100vh;
+    }
+
+
+}
+@media screen and (max-width:610px){
+    .about-container{
+        width: 300px;
+        height: 300px;
+    }
+    .about-body{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 50vh;
+    }
+    .space-about{
+        display: flex;
+        min-height: 50vh;
+    }
+    .about-text{
+        padding: 30px;
+    }
+    p {
+        font-size:12px;
+    }
+
+}
+
+.products-section {
+    min-height: 100vh;
+}
+
+.sec3 {
+    min-height: 50vh;
+}
+
+.aboutp-info {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin: 20px;
+    align-items: center;
+    flex-direction: column;
+    color: #f0e68c;
+}
+
+iframe {
+    max-width: 100%;
+    width: 100% !important;
+}

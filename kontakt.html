@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Imobilare</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo-wrapper">
+                <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+                <div class="mobile-menu" onclick="menuX(this)">
+                    <div class="ln1"></div>
+                    <div class="ln2"></div>
+                    <div class="ln3"></div>
+                </div>
+            </div>
+            <div class="nav" id="navBar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="kontakt.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="about-header">
+        <div class="about-img">
+        </div>
+    </section>
+    <section class="sc3">
+        <div class="aboutp-info">
+            <p><b>Adres:</b></p>
+            <p>Yukarı Dudullu Mah Keyap Cad. K1 Blok No:171 Keyap Çarşısı, 34775 Ümraniye</p><br>
+            <p><b>Çalışma Saatleri:</b></p>
+            <p>9:00 -22:00</p><br>
+            <p><b>Telefon :</b></p>
+            <p>0850 840 46 26</p><br>
+            <p><b>Whatsapp :</b></p>
+            <p>0530 464 84 18 – 0534 799 62 70</p>
+        </div>
+    </section>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6021.512408146102!2d29.14567662716978!3d41.0087090086535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf467820637a3bc2!2sMk+Mobilya!5e0!3m2!1str!2str!4v1544834502856"
+        width="600" height="450" frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen=""></iframe>
+    <section class="sec2">
+        <div class="info">
+            <div class="info-column left">
+            </div>
+            <div class="info-column middle">
+                <div class="info-left">
+                    <h2>Mağaza</h2>
+                    <br>
+                    <i class="fa fa-envelope" style="font-size:30px;"></i><br><br>
+                    <h4><b>PHONE & EMAİL</b></h4><br>
+                    <a href="mailto:info@mkmobilya.com"
+                        style="text-decoration: none; color: #f0e68c;">info@mkmobilya.com</a>
+                    <a href="tel:05347996270" style="color: #f0e68c; text-decoration: none;">0534 799 62 70</a><br><br>
+                    <i class="fa fa-map-marker" style="font-size:30px;"></i><br><br>
+                    <h3>Address:</h3><br>
+                    <a style="color: #f0e68c; text-decoration: none;"
+                        href="https://www.google.com.tr/maps/place/Mk+Mobilya/@41.0090945,29.1577525,15z/data=!4m5!3m4!1s0x0:0xcf467820637a3bc2!8m2!3d41.0090945!4d29.1577525"
+                        target="_blank">Yukarı Dudullu Mah Keyap Cad. K1 Blok No:171 Keyap Çarşısı, 34775 Ümraniye</a>
+                </div>
+                <div class="logo-info">
+                    <img src="images/logo.png" alt="" width=40%>
+                </div>
+                <div class="info-right">
+                    <h2>Mağaza</h2>
+                    <br>
+                    <i class="fa fa-envelope" style="font-size:30px;"></i><br><br>
+                    <h4><b>PHONE & EMAİL</b></h4><br>
+                    <a href="mailto:info@mkmobilya.com"
+                        style="text-decoration: none; color: #f0e68c;">info@mkmobilya.com</a>
+                    <a href="tel:05347996270" style="color: #f0e68c; text-decoration: none;">0534 799 62 70</a><br><br>
+                    <i class="fa fa-map-marker" style="font-size:30px;"></i><br><br>
+                    <h3>Address:</h3><br>
+                    <a style="color: #f0e68c; text-decoration: none;"
+                        href="https://www.google.com.tr/maps/place/Mk+Mobilya/@41.0090945,29.1577525,15z/data=!4m5!3m4!1s0x0:0xcf467820637a3bc2!8m2!3d41.0090945!4d29.1577525"
+                        target="_blank">Yukarı Dudullu Mah Keyap Cad. K1 Blok No:171 Keyap Çarşısı, 34775 Ümraniye</a>
+                </div>
+            </div>
+            <div class="info-column right">
+            </div>
+        </div>
+        <div style="min-height: 100px;"></div>
+        <hr>
+    </section>
+    <footer>
+        <p> Kredincialet e kompanise C. </p>
+        <p id="date"></p>
+    </footer>
+
+    <script>
+        function menuX(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <script src="app.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.mobile-menu').click(function () {
+                $('.nav').slideToggle();
+            })
+        });
+    </script>
+</body>
+
+</html>
